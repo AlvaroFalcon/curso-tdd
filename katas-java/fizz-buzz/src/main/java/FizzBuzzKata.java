@@ -6,6 +6,7 @@ public class FizzBuzzKata {
         List<String> resultList = new ArrayList<>();
         for (int i = 1; i <= 100; i++) {
             String result = "";
+
             if(isFizz(i)){
                 result += "Fizz";
             }
