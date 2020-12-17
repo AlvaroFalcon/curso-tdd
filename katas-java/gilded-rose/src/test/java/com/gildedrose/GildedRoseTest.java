@@ -7,6 +7,15 @@ import org.junit.jupiter.api.Test;
 
 public class GildedRoseTest {
 
+  @Test
+  public void sellin_should_decrease_1_by_1(){
+    Item[] items = new Item[]{new Item("foo", 30, 30)};
+    GildedRose app = new GildedRose(items);
+
+    app.updateQuality();
+
+    assertEquals(29, app.items[0].sellIn);
+  }
 
   @Test
   public void quality_should_decrease_1_by_1(){
@@ -16,7 +25,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(29, app.items[0].quality);
-    assertEquals(29, app.items[0].sellIn);
   }
 
   @Test
@@ -27,7 +35,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(28, app.items[0].quality);
-    assertEquals(-1, app.items[0].sellIn);
   }
 
   @Test
@@ -38,7 +45,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(28, app.items[0].quality);
-    assertEquals(-1, app.items[0].sellIn);
   }
 
   @Test
@@ -49,7 +55,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(0, app.items[0].quality);
-    assertEquals(-1, app.items[0].sellIn);
   }
 
   @Test
@@ -60,7 +65,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(2, app.items[0].quality);
-    assertEquals(-1, app.items[0].sellIn);
   }
 
   @Test
@@ -71,7 +75,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(1, app.items[0].quality);
-    assertEquals(0, app.items[0].sellIn);
   }
 
   @Test
@@ -82,7 +85,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(50, app.items[0].quality);
-    assertEquals(0, app.items[0].sellIn);
   }
 
   @Test
@@ -104,7 +106,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(31, app.items[0].quality);
-    assertEquals(29, app.items[0].sellIn);
   }
 
   @Test
@@ -115,7 +116,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(32, app.items[0].quality);
-    assertEquals(9, app.items[0].sellIn);
   }
 
   @Test
@@ -126,7 +126,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(33, app.items[0].quality);
-    assertEquals(4, app.items[0].sellIn);
   }
 
   @Test
@@ -137,7 +136,6 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(0, app.items[0].quality);
-    assertEquals(-1, app.items[0].sellIn);
   }
 
 }
