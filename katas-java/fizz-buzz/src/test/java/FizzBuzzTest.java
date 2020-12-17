@@ -26,8 +26,10 @@ public class FizzBuzzTest {
 	public void if_divisible_by_3_return_fizz() {
 		List<String> fizzbuzzList = new FizzBuzzKata().execute();
 		String element = fizzbuzzList.get(2);
+		String containsCase = fizzbuzzList.get(12);
 
 		assertEquals("Fizz", element);
+		assertEquals("Fizz", containsCase);
 
 
 	}
@@ -36,16 +38,20 @@ public class FizzBuzzTest {
 	public void if_divisible_by_5_return_buzz() {
 		List<String> fizzbuzzList = new FizzBuzzKata().execute();
 		String element = fizzbuzzList.get(4);
+		String containsCase = fizzbuzzList.get(51);
 
 		assertEquals("Buzz", element);
+		assertEquals("Buzz", containsCase);
 	}
 
 	@Test
 	public void if_divisible_by_3_and_5_return_fizzbuzz() {
 		List<String> fizzbuzzList = new FizzBuzzKata().execute();
 		String element = fizzbuzzList.get(14);
+		String containsCase = fizzbuzzList.get(52);
 
 		assertEquals("FizzBuzz", element);
+		assertEquals("FizzBuzz", containsCase);
 	}
 
 }
