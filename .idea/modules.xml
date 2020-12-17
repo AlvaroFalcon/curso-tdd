@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/katas-java/bank/bank.iml" filepath="$PROJECT_DIR$/katas-java/bank/bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/katas-java/coffee-machine/coffee-machine.iml" filepath="$PROJECT_DIR$/katas-java/coffee-machine/coffee-machine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/curso-tdd-java.iml" filepath="$PROJECT_DIR$/.idea/curso-tdd-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/katas-java/fizz-buzz/fizz-buzz.iml" filepath="$PROJECT_DIR$/katas-java/fizz-buzz/fizz-buzz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/katas-java/gilded-rose/gilded-rose.iml" filepath="$PROJECT_DIR$/katas-java/gilded-rose/gilded-rose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/katas-java/password-validator/password-validator.iml" filepath="$PROJECT_DIR$/katas-java/password-validator/password-validator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/katas-java/tire-pressure-variation/tire-pressure-monitoring-system-variation.iml" filepath="$PROJECT_DIR$/katas-java/tire-pressure-variation/tire-pressure-monitoring-system-variation.iml" />
+    </modules>
+  </component>
+</project>

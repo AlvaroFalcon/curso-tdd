@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tire-pressure-monitoring-system-variation" />
+        <module name="bank" />
+        <module name="fizz-buzz" />
+        <module name="gilded-rose" />
+        <module name="password-validator" />
+        <module name="coffee-machine" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bank" target="11" />
+      <module name="coffee-machine" target="11" />
+      <module name="fizz-buzz" target="11" />
+      <module name="gilded-rose" target="11" />
+      <module name="password-validator" target="11" />
+      <module name="tire-pressure-monitoring-system-variation" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/katas-java/bank/pom.xml" />
+        <option value="$PROJECT_DIR$/katas-java/fizz-buzz/pom.xml" />
+        <option value="$PROJECT_DIR$/katas-java/gilded-rose/pom.xml" />
+        <option value="$PROJECT_DIR$/katas-java/coffee-machine/pom.xml" />
+        <option value="$PROJECT_DIR$/katas-java/password-validator/pom.xml" />
+        <option value="$PROJECT_DIR$/katas-java/tire-pressure-variation/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="false" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK" />
+</project>
