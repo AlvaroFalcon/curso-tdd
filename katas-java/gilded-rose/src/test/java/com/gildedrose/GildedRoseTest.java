@@ -7,6 +7,29 @@ import org.junit.jupiter.api.Test;
 
 public class GildedRoseTest {
 
+
+  @Test
+  public void quality_should_decrease_1_by_1(){
+    Item[] items = new Item[]{new Item("foo", 30, 30)};
+    GildedRose app = new GildedRose(items);
+
+    app.updateQuality();
+
+    assertEquals(29, app.items[0].quality);
+    assertEquals(29, app.items[0].sellIn);
+  }
+
+  @Test
+  public void quality_should_decrease_by_2_when_sellin_is_lower_equals_than_0(){
+    Item[] items = new Item[]{new Item("foo", 0, 30)};
+    GildedRose app = new GildedRose(items);
+
+    app.updateQuality();
+
+    assertEquals(28, app.items[0].quality);
+    assertEquals(-1, app.items[0].sellIn);
+  }
+
   @Test
   public void quality_should_degrade_double_if_the_date_has_passed() {
     Item[] items = new Item[]{new Item("foo", 0, 30)};
@@ -26,6 +49,17 @@ public class GildedRoseTest {
     app.updateQuality();
 
     assertEquals(0, app.items[0].quality);
+    assertEquals(-1, app.items[0].sellIn);
+  }
+
+  @Test
+  public void aged_brie_should_increase_by_2_when_sellin_is_lower_equals_than_0() {
+    Item[] items = new Item[]{new Item("Aged Brie", 0, 0)};
+    GildedRose app = new GildedRose(items);
+
+    app.updateQuality();
+
+    assertEquals(2, app.items[0].quality);
     assertEquals(-1, app.items[0].sellIn);
   }
 
@@ -53,12 +87,12 @@ public class GildedRoseTest {
 
   @Test
   public void sulfuras_should_not_decrease_days_and_should_mantain_quality() {
-    Item[] items = new Item[]{new Item("Sulfuras, Hand of Ragnaros", 0, 20)};
+    Item[] items = new Item[]{new Item("Sulfuras, Hand of Ragnaros", 0, 80)};
     GildedRose app = new GildedRose(items);
 
     app.updateQuality();
 
-    assertEquals(20, app.items[0].quality);
+    assertEquals(80, app.items[0].quality);
     assertEquals(0, app.items[0].sellIn);
   }
 
@@ -105,16 +139,5 @@ public class GildedRoseTest {
     assertEquals(0, app.items[0].quality);
     assertEquals(-1, app.items[0].sellIn);
   }
-
-  @Test
-  public void fix_me_conjured() {
-    Item[] items = new Item[]{new Item("Conjured", 0, 30)};
-    GildedRose app = new GildedRose(items);
-
-    app.updateQuality();
-
-    assertTrue(false);
-  }
-
 
 }
